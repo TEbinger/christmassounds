@@ -6,8 +6,8 @@ minetest.register_on_joinplayer(function(player)
       laueft = true
       minetest.sound_play("christmassounds_mini-christmas-song", {
         pos = {x = 166, y = 14, z = -122},
-        max_hear_distance = 15,
-        gain = 1,
+        max_hear_distance = 8,
+        gain = 0.6,
         loop = true})
     end
 end)
