@@ -11,12 +11,13 @@ local function play()
   end)
 end
  
-minetest.register_on_joinplayer(function(player)
+--[[minetest.register_on_joinplayer(function(player)
     if laueft then
       laueft = false
       play()
     end
 end)
+]]
 
 
 --[[minetest.register_chatcommand("music", {
