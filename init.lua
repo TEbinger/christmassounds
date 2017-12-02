@@ -6,6 +6,7 @@ local function play()
       pos = {x = 166, y = 14, z = -122},
       max_hear_distance = 10,
       gain = 0.4})
+ --hier weitere Klänge einfügen
   minetest.after(32, function()
       return play()
   end)
