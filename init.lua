@@ -9,6 +9,17 @@ minetest.register_chatcommand("music", {
           loop = true}) 
   end}) 
 
+--Kopiert vom Church Mod
+-- actually ring the bell
+church_bell.ring_church_bell_once = function()
+
+   for i,v in ipairs( church_bell_positions ) do
+-- print('Ringing bell at '..tostring( minetest.pos_to_string( v )));
+      minetest.sound_play( 'church_bell',
+        { pos = v, gain = 1.5, max_hear_distance = 300,});
+   end
+end
+
 
 
 --local laueft = false
