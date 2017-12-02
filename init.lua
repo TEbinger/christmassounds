@@ -6,7 +6,14 @@ local function play()
       pos = {x = 166, y = 14, z = -122},
       max_hear_distance = 10,
       gain = 0.4})
- --hier weitere Klänge einfügen
+	  minetest.sound_play("hoehle", {
+      pos = {x = 112.3, y = -79.5, z = -179.8},
+      max_hear_distance = 40,
+      gain = 0.6})
+	  minetest.sound_play("finsterabstieg", {
+      pos = {x = 268.4, y = -5.5, z = -166.7},
+      max_hear_distance = 10,
+      gain = 0.6})
   minetest.after(32, function()
       return play()
   end)
