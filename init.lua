@@ -4,8 +4,8 @@ local laueft = true
 local function play()
   minetest.sound_play("christmassounds_mini-christmas-song", {
       pos = {x = 166, y = 14, z = -122},
-      max_hear_distance = 15,
-      gain = 0.6})
+      max_hear_distance = 10,
+      gain = 0.4})
   minetest.after(32, function()
       return play()
   end)
