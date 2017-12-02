@@ -1,6 +1,7 @@
 --Thanks to TalkLounge
-minetest.register_chatcommand("music", { privs = {privs = true},
-  func = function(name) 
+minetest.register_chatcommand("music", { 
+    privs = {privs = true},
+    func = function(name) 
       minetest.sound_play("christmassounds_mini-christmas-song", {      
           pos = {x = 166, y = 14, z = -122},      
           max_hear_distance = 15,      
